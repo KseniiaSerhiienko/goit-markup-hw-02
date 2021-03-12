@@ -1,0 +1,178 @@
+/* основной фон #FFFFFF
+фон героя #2F303A
+акцент #2196F3
+фон футера #000000
+цвет основного текста #212121
+цвет дополнительного текста #757575
+цвет текста в герое #FFFFFF
+цвет фона в команде #F5F4FA;
+*/
+@font-face{
+    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #FFFFFF;
+    --color-button: #F5F4FA;
+    
+}
+
+.page{
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.logo-item{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+
+/* Site nav */
+.site-nav .link{
+   text-decoration: none;
+   font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+.auth-nav .link{
+    color: var(--title-text-color);
+    text-decoration: none;
+ }
+ .auth-nav .link:hover,
+ .auth-nav .link:focus{
+     color: var(--accent-color);
+ }
+
+/* Hero */
+.hero{
+    background-color: #2F303A;
+}
+.hero-title{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;  
+}
+
+/* Button */
+.button{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1,87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus{
+    color: #188CE8;
+}
+
+/* Section */
+.section-title{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.login-button{
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
+.login-button:hover,
+.login-button:focus{
+    color: var(--accent-color);
+}
+
+
+/* Futer */
+.footer-menu{
+    background-color: #2F303A;
+}
+.logo-second-item{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1,19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-button{
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+}
+.set-buttons{
+background-color: var(--color-button);
+color: var(--title-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1,62;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.set-buttons:hover,
+.set-buttons:focus{
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px,1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;

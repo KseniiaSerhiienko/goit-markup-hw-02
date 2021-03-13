@@ -125,6 +125,10 @@
     color: var(--title-text-color);
 }
 
+.section-team{
+    background-color: var(--color-button);
+}
+
 
 .subtitle{
     font-family: Roboto;
